@@ -1,7 +1,10 @@
 <?php
+$version = '0.1';
 $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = '';
+
+echo "MySQL Defragment tables $version\n\n";
 
 $db = mysql_connect($db_host, $db_user, $db_pass) or die('Cannot connect to DB');
 mysql_select_db('information_schema') or die('Cannot select information_schema');
